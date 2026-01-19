@@ -1,61 +1,127 @@
 # Customer-Purchase-Behavior-Analysis
-Complete Data Analytics Portfolio Project with end-to-end industry standard Data Analysis of Customer Shopping Trends from Retail Data using SQL, Python and Power BI.
 
-## Overview
 
-An end-to-end data analytics project analyzing customer shopping behavior to uncover trends in purchasing, discounts, subscriptions, and product performance. The project applies Python, SQL, and Power BI to generate actionable business insights.
+## 📌 Overview
 
----
+This project focuses on analyzing customer shopping behavior using transactional retail data. The goal is to uncover meaningful insights related to customer demographics, purchasing patterns, product performance, discounts, and subscriptions to support data-driven business decisions.
 
-## Dataset
-
-* **Records:** 3,900
-* **Features:** 18
-* Includes customer demographics, purchase details, discounts, ratings, and subscription data
-* Missing review ratings handled using median imputation
+The analysis follows an end-to-end data analytics workflow, including data loading, cleaning, exploratory analysis, SQL querying, and dashboard visualization.
 
 ---
 
-## Tools & Tech
+## 📁 Dataset
+
+* **Total Records:** 3,900
+* **Total Features:** 18
+
+### Key Data Fields
+
+* **Customer Information:** Age, Gender, Location, Subscription Status
+* **Purchase Details:** Item Purchased, Category, Purchase Amount, Season, Size, Color
+* **Behavioral Attributes:** Discount Applied, Previous Purchases, Purchase Frequency, Review Rating, Shipping Type
+
+### Data Quality
+
+* Missing values identified in the **Review Rating** column
+* Missing data handled using **median imputation by product category**
+
+---
+
+## 🛠 Tools & Technologies
 
 * **Python:** Pandas, NumPy, Matplotlib, Seaborn
 * **SQL:** PostgreSQL / MySQL / SQL Server
 * **Visualization:** Power BI
 * **Reporting:** PowerPoint (Gamma)
+* **Environment:** Jupyter Notebook
 
 ---
 
-## What Was Done
+## 🔍 Steps Performed
 
-* Data cleaning & preprocessing in Python
-* Exploratory Data Analysis (EDA)
-* Feature engineering (age groups, purchase frequency)
-* Business-driven SQL queries
-* Interactive Power BI dashboard
-* Final report & presentation
+1. **Data Loading**
+
+   * Imported dataset into Python using Pandas
+
+2. **Data Cleaning**
+
+   * Handled missing values
+   * Standardized column names (snake_case)
+   * Removed redundant columns
+
+3. **Exploratory Data Analysis (EDA)**
+
+   * Descriptive statistics and data distributions
+   * Customer segmentation and purchase trends
+   * Feature engineering (age groups, purchase frequency)
+
+4. **SQL Analysis**
+
+   * Loaded cleaned data into a relational database
+   * Executed business-focused SQL queries for insights
+
+5. **Dashboard & Reporting**
+
+   * Built interactive Power BI dashboards
+   * Created summary report and presentation
 
 ---
 
-## Key Insights
+## 📈 SQL Analysis Highlights
 
-* Subscribers spend more on average
-* Loyal customers drive higher revenue
-* Some products are highly discount-dependent
-* Specific age groups contribute most to sales
-* Express shipping users show higher purchase value
-
----
-
-## How to Run
-
-1. Clone the repo
-2. Run the Python notebook
-3. Load cleaned data into SQL database
-4. Execute SQL queries
-5. Open Power BI dashboard
+* Revenue comparison by **gender**
+* Average spending: **subscribers vs non-subscribers**
+* **Top 5 products** by average review rating
+* Products with highest **discount dependency**
+* Customer segmentation: New, Returning, Loyal
+* Revenue contribution by **age group**
+* Shipping type vs purchase amount analysis
 
 ---
 
-⭐ *Ideal project for Data Analyst / Business Analyst portfolios*
+## 📊 Power BI Dashboard
+
+The dashboard provides interactive visual insights on:
+
+* Customer demographics
+* Revenue and sales trends
+* Product performance
+* Discount and subscription impact
+* Customer segmentation
+
+Designed for easy interpretation by business stakeholders.
+
+---
+
+## 📌 Results & Insights
+
+* Subscribers generate higher average revenue
+* Loyal customers show consistent high spending
+* Certain products heavily rely on discounts
+* Specific age groups contribute significantly to revenue
+* Express shipping users tend to spend more
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+2. Open the Jupyter Notebook
+3. Install required Python libraries
+4. Run the notebook cells sequentially
+5. Load the cleaned dataset into SQL database
+6. Execute SQL queries
+7. Open the Power BI file to view the dashboard
+
+---
+
+## 📄 Deliverables
+
+* Cleaned dataset
+* Python EDA notebook
+* SQL queries
+* Power BI dashboard
+* Business report & presentation
+
 
 
